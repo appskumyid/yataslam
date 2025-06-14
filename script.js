@@ -113,7 +113,7 @@ function showProgramDetail(programId) {
                     <div style="margin-bottom: 1.2rem;"><strong style="color: #2c5530;">📝 Deskripsi:</strong><br><pre style="white-space: pre-wrap; font-family: inherit; margin: 0.8rem 0; background: #f8f9fa; padding: 1rem; border-radius: 10px; line-height: 1.6;">${program.description}</pre></div>
                     <div style="margin-bottom: 2rem;"><strong style="color: #2c5530;">✅ Persyaratan:</strong><br><pre style="white-space: pre-wrap; font-family: inherit; margin: 0.8rem 0; background: #f8f9fa; padding: 1rem; border-radius: 10px; line-height: 1.6;">${program.requirements}</pre></div>
                     <div style="text-align: center;">
-                        <a href="https://wa.me/6281769366607?text=Assalamu'alaikum, saya ingin mendaftar program ${program.title}" style="background: #d4af37; color: white; padding: 1.2rem 2.5rem; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 1.1rem; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='#c0a030'" onmouseout="this.style.background='#d4af37'">Daftar Sekarang</a>
+                        <a href="https://wa.me/628176936607?text=Assalamu'alaikum, saya ingin mendaftar program ${program.title}" style="background: #d4af37; color: white; padding: 1.2rem 2.5rem; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 1.1rem; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='#c0a030'" onmouseout="this.style.background='#d4af37'">Daftar Sekarang</a>
                     </div>
                 </div>
             </div>
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const message = document.getElementById('message').value;
             
             const whatsappMessage = `Assalamu'alaikum, saya ${name} (${email}${phone ? ', ' + phone : ''}). ${message}`;
-            const whatsappUrl = `https://wa.me/6281769366607?text=${encodeURIComponent(whatsappMessage)}`;
+            const whatsappUrl = `https://wa.me/628176936607?text=${encodeURIComponent(whatsappMessage)}`;
             
             window.open(whatsappUrl, '_blank');
         });
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             whatsappMessage += `\nMohon informasi lebih lanjut mengenai pendaftaran. Terima kasih.`;
             
-            const whatsappUrl = `https://wa.me/6281769366607?text=${encodeURIComponent(whatsappMessage)}`;
+            const whatsappUrl = `https://wa.me/628176936607?text=${encodeURIComponent(whatsappMessage)}`;
             
             window.open(whatsappUrl, '_blank');
         });
