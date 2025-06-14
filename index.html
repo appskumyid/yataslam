@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yayasan Yataslam - Pendidikan Islam & Bahasa Arab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo" onclick="showSection('home')">Yayasan Yataslam</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#" onclick="showSection('home')">Home</a></li>
+                    <li><a href="#" onclick="showSection('about')">Tentang</a></li>
+                    <li><a href="#" onclick="showSection('programs')">Program</a></li>
+                    <li><a href="#" onclick="showSection('contact')">Kontak</a></li>
+                    <li><a href="#" onclick="showSection('register')" class="register-btn">Daftar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <!-- Hero Section with Slideshow -->
+            <div class="hero">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="images/slide1.jpg" alt="Pendidikan Islam">
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide2.jpg" alt="Pembelajaran Bahasa Arab">
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide3.jpg" alt="Kajian Kitab">
+                        <div class="slide-overlay"></div>
+                    </div>
+                    
+                    <!-- Navigation arrows -->
+                    <button class="slide-nav prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="slide-nav next" onclick="changeSlide(1)">&#10095;</button>
+                    
+                    <!-- Slide indicators -->
+                    <div class="slide-indicators">
+                        <span class="indicator active" onclick="currentSlide(1)"></span>
+                        <span class="indicator" onclick="currentSlide(2)"></span>
+                        <span class="indicator" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+                
+                <div class="hero-content">
+                    <h1>Yayasan Yataslam</h1>
+                    <p>Membangun Generasi Qur'ani Melalui Pendidikan Islam & Bahasa Arab Berkualitas</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="cta-button primary" onclick="showSection('register')">Daftar Sekarang</a>
+                        <a href="#" class="cta-button secondary" onclick="showSection('programs')">Lihat Program</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Features Section -->
+            <div class="features-section">
+                <div class="container">
+                    <h2 class="section-title">Mengapa Memilih Yayasan Yataslam?</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">📚</div>
+                            <h3>Metode Pembelajaran Modern</h3>
+                            <p>Kombinasi metode tradisional dan modern untuk hasil pembelajaran yang optimal</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">👨‍🏫</div>
+                            <h3>Pengajar Berkompeten</h3>
+                            <p>Ustadz dan ustadzah yang berpengalaman dan berkualifikasi tinggi</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🏛️</div>
+                            <h3>Lingkungan Kondusif</h3>
+                            <p>Suasana belajar yang nyaman dan mendukung perkembangan spiritual</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🎯</div>
+                            <h3>Program Terarah</h3>
+                            <p>Kurikulum yang terstruktur sesuai dengan kebutuhan dan tingkat kemampuan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="about">
+                <div class="container">
+                    <h2 class="section-title">Tentang Yayasan Yataslam</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <h3>Visi Kami</h3>
+                            <p>Menjadi lembaga pendidikan Islam terdepan yang mencetak generasi muslim yang berakhlak mulia, berwawasan luas, dan mampu berkontribusi positif bagi masyarakat.</p>
+                            
+                            <h3>Misi Kami</h3>
+                            <ul>
+                                <li>Menyelenggarakan pendidikan Islam berkualitas tinggi</li>
+                                <li>Mengembangkan kemampuan bahasa Arab santri</li>
+                                <li>Melestarikan tradisi kajian kitab klasik</li>
+                                <li>Membentuk karakter Islami yang kuat</li>
+                            </ul>
+                            
+                            <h3>Nilai-Nilai Kami</h3>
+                            <p>Dengan metode pembelajaran yang modern namun tetap berpegang teguh pada nilai-nilai tradisional Islam, kami berusaha memberikan pendidikan terbaik bagi para santri dan peserta didik.</p>
+                        </div>
+                        <div class="about-image">
+                            <img src="images/slide1.jpg" alt="Yayasan Yataslam">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section id="programs" class="section">
+            <div class="programs">
+                <div class="container">
+                    <h2 class="section-title">Program Kegiatan</h2>
+                    <div class="programs-grid">
+                        <div class="program-card">
+                            <div class="program-icon">📚</div>
+                            <h3>Durusul Lughoh 1 (Hari Sabtu)</h3>
+                            <p>Program intensif pembelajaran bahasa Arab dasar yang berfokus pada penguasaan tata bahasa (nahwu dan shorof) serta percakapan sehari-hari.</p>
+                            <div class="program-buttons">
+                                <a href="#" class="btn btn-primary" onclick="showProgramDetail('durusul1')">Lihat Detail</a>
+                                <a href="https://wa.me/6281769366607?text=Assalamu'alaikum, saya ingin bertanya tentang program Durusul Lughoh 1" class="btn btn-secondary">Kirim Pesan</a>
+                            </div>
+                        </div>
+
+                        <div class="program-card">
+                            <div class="program-icon">📖</div>
+                            <h3>Durusul Lughoh 2</h3>
+                            <p>Lanjutan dari Durusul Lughoh 1, program ini mendalami kaidah bahasa Arab tingkat menengah dengan penekanan pada pemahaman teks-teks berbahasa Arab.</p>
+                            <div class="program-buttons">
+                                <a href="#" class="btn btn-primary" onclick="showProgramDetail('durusul2')">Lihat Detail</a>
+                                <a href="https://wa.me/6281769366607?text=Assalamu'alaikum, saya ingin bertanya tentang program Durusul Lughoh 2" class="btn btn-secondary">Kirim Pesan</a>
+                            </div>
+                        </div>
+
+                        <div class="program-card">
+                            <div class="program-icon">🕌</div>
+                            <h3>Tahsin Akhwat</h3>
+                            <p>Kelas perbaikan bacaan Al-Qur'an khusus untuk muslimah, dengan fokus pada makharijul huruf dan tajwid yang benar.</p>
+                            <div class="program-buttons">
+                                <a href="#" class="btn btn-primary" onclick="showProgramDetail('tahsin-akhwat')">Lihat Detail</a>
+                                <a href="https://wa.me/6281769366607?text=Assalamu'alaikum, saya ingin bertanya tentang program Tahsin Akhwat" class="btn btn-secondary">Kirim Pesan</a>
+                            </div>
+                        </div>
+
+                        <div class="program-card">
+                            <div class="program-icon">🕌</div>
+                            <h3>Tahsin Ikhwan</h3>
+                            <p>Kelas perbaikan bacaan Al-Qur'an khusus untuk muslimin, dengan fokus pada makharijul huruf dan tajwid yang benar.</p>
+                            <div class="program-buttons">
+                                <a href="#" class="btn btn-primary" onclick="showProgramDetail('tahsin-ikhwan')">Lihat Detail</a>
+                                <a href="https://wa.me/6281769366607?text=Assalamu'alaikum, saya ingin bertanya tentang program Tahsin Ikhwan" class="btn btn-secondary">Kirim Pesan</a>
+                            </div>
+                        </div>
+
+                        <div class="program-card">
+                            <div class="program-icon">📜</div>
+                            <h3>Kajian Kitab</h3>
+                            <p>Program rutin kajian kitab-kitab klasik Islam dari berbagai disiplin ilmu, seperti fiqh, hadits, dan aqidah, dibimbing oleh ustadz yang berkompeten.</p>
+                            <div class="program-buttons">
+                                <a href="#" class="btn btn-primary" onclick="showProgramDetail('kajian-kitab')">Lihat Detail</a>
+                                <a href="https://wa.me/6281769366607?text=Assalamu'alaikum, saya ingin bertanya tentang program Kajian Kitab" class="btn btn-secondary">Kirim Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact">
+                <div class="container">
+                    <h2 class="section-title">Hubungi Kami</h2>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <h3>Informasi Kontak</h3>
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p>info@yataslam.org</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📱</div>
+                                <div>
+                                    <strong>WhatsApp</strong>
+                                    <p>+62 817-6936-607</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <strong>Alamat</strong>
+                                    <p>Jl. Raya Condet No. 123, Kramat Jati, Jakarta Timur, DKI Jakarta 13540</p>
+                                </div>
+                            </div>
+                            
+                            <div class="map-container">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.7461!2d106.8747!3d-6.2088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMzEuNyJTIDEwNsKwNTInMjkuMCJF!5e0!3m2!1sen!2sid!4v1234567890" width="100%" height="250" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="contact-form">
+                            <h3>Kirim Pesan</h3>
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <label for="name">Nama Lengkap</label>
+                                    <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Masukkan alamat email Anda" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Nomor Telepon</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon Anda">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Pesan</label>
+                                    <textarea id="message" name="message" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">Kirim via WhatsApp</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Register Section -->
+        <section id="register" class="section">
+            <div class="register">
+                <div class="container">
+                    <h2 class="section-title">Formulir Pendaftaran</h2>
+                    <div class="register-content">
+                        <div class="register-info">
+                            <h3>Bergabunglah dengan Kami</h3>
+                            <p>Daftarkan diri Anda untuk mengikuti program-program unggulan di Yayasan Yataslam. Isi formulir di samping dengan lengkap dan benar.</p>
+                            
+                            <div class="register-benefits">
+                                <h4>Keuntungan Bergabung:</h4>
+                                <ul>
+                                    <li>✓ Pembelajaran dengan metode yang terbukti efektif</li>
+                                    <li>✓ Pengajar yang berpengalaman dan berkualitas</li>
+                                    <li>✓ Lingkungan belajar yang kondusif</li>
+                                    <li>✓ Sertifikat setelah menyelesaikan program</li>
+                                    <li>✓ Komunitas santri yang solid</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="register-form">
+                            <form id="registerForm">
+                                <div class="form-group">
+                                    <label for="fullName">Nama Lengkap</label>
+                                    <input type="text" id="fullName" name="fullName" placeholder="Masukkan nama lengkap Anda" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="address">Tempat Tinggal</label>
+                                    <input type="text" id="address" name="address" placeholder="Masukkan alamat tempat tinggal Anda" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="course">Pilihan Kursus</label>
+                                    <select id="course" name="course" required>
+                                        <option value="">Pilih kursus yang diminati</option>
+                                        <option value="Bahasa Arab">Bahasa Arab</option>
+                                        <option value="Tahsin">Tahsin</option>
+                                        <option value="Kajian Kitab">Kajian Kitab</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="registerMessage">Pesan</label>
+                                    <textarea id="registerMessage" name="registerMessage" placeholder="Tulis pesan atau pertanyaan Anda (opsional)"></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">Daftar via WhatsApp</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Kontak Kami</h3>
+                    <p><strong>Alamat:</strong> Jl. Raya Condet No. 123, Kramat Jati, Jakarta Timur, DKI Jakarta 13540</p>
+                    <p><strong>Email:</strong> info@yataslam.org</p>
+                    <p><strong>Telepon:</strong> +62 817-6936-607</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
+                        <a href="#" class="social-icon"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook"></a>
+                        <a href="#" class="social-icon"><img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn"></a>
+                        <a href="#" class="social-icon"><img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Yayasan Yataslam. Semua hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
